@@ -2,7 +2,7 @@ async function runTest(name: string, payload: any) {
     console.log(`\n\n--- Running Test: ${name} ---`);
     console.log("Payload:", payload);
     try {
-        const response = await fetch("http://localhost:3000/identify", {
+        const response = await fetch("https://identity-reconciliation-2-ubj6.onrender.com/identify", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
