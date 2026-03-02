@@ -21,7 +21,7 @@ app.use(errorHandler_1.errorHandler);
 const startServer = async () => {
     await (0, db_1.connectDB)();
     app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
+        console.log(`backend is running on port ${PORT}`);
     });
 };
 startServer();
